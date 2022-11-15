@@ -1,0 +1,563 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(https://images5.alphacoders.com/114/1149571.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+.header{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*---------------NAV--------------------*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav img{
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.nav-link{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nav-menu{
+    display: flex;
+    margin: 0 50px 0 0 ;
+    list-style: none;
+}
+.nav-menu-item{
+    line-height: 80px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    width: max-content;
+    
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color:rgb(48, 13, 151);
+    transition: 1.1s;
+}
+.nav-toggle{
+    color: aliceblue;
+    background:none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+
+@media (max-width:768px) {
+    body{
+        padding-top: 70px;
+        background-image: url(https://images5.alphacoders.com/114/1149571.jpg);
+
+    }
+    .header{
+        height: 60px;
+      
+    }
+    .nav img{
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 0 0 ;
+        list-style: none;
+        background-image: url(https://images5.alphacoders.com/114/1149571.jpg);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        line-height: 65px;
+        margin: 0 10px;
+        text-transform: uppercase;
+        width: max-content;
+        
+    }
+    .nav-menu-link{
+        padding: 8px 12px;
+        border-radius: 3px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: rgb(14, 255, 235);
+        transition: 0.5s;
+    }
+    .nav-toggle{
+        color: aliceblue;
+        background:none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60px;
+        
+        display: block;
+    
+    }
+    .nav-menu_visible{
+        left: 0;
+
+    }
+}
+/*----------------MAIN INDEX---------------*/
+.showcase{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+    color: antiquewhite;
+    position: relative;
+    margin-top: 70px;
+    
+}
+.video-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.video-container video{
+width: 100%;
+
+}
+.video-container:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.content{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Finlandica', sans-serif;
+    margin-top: 70px;
+}
+.content h2{
+    color: rgb(203, 200, 214);
+    font-size: 30px;
+}
+
+.content a{
+background-color: rgb(30, 12, 95);
+color: aliceblue;
+width: 250px;
+height: 100px;
+border-radius: 20px;
+color: aliceblue;
+font-family: 'Roboto Condensed', sans-serif;
+text-decoration: none;
+text-transform: capitalize;
+text-align: center;
+padding-top: 28px;
+font-size: 40px;
+margin-top: 40px;
+}
+.content a:Hover{
+    background-color: rgb(40, 16, 113);
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+/*----------------REDES---------------*/
+
+.redes{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.redes ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes ul li a{
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: aliceblue;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0 , 0, .2);
+    transition: .2s;
+}
+.redes ul:hover a{
+    filter: blur(1px);    
+}
+.redes ul li a:hover{
+    transform: translateY(-1px) scale(1.20);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0 , 0, .4);
+    filter: none;
+
+}
+.redes ul li .instagram:hover{
+    background-color:  #d12545
+}
+.redes ul li .twitch:hover{
+    background-color:  #c300ff
+}
+.redes ul li .youtube:hover{
+    background-color:  #f11212
+}
+.redes ul li .discord:hover{
+    background-color:  #4062d1
+}
+.redes h2{
+    padding: 0 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(180, 194, 206);
+}
+/*---------------- FIN MAIN INDEX---------------*/
+/*---------------- INICIO MAIN CAMPEONES ---------------*/
+.camp{
+    padding: 200px 50px 20px;
+    text-align: center;
+}
+.camp h1{
+    text-transform:uppercase;
+    color: rgb(233, 227, 227);
+    font-size: 40px;
+    
+
+}
+.camp span{
+    color: rgb(30, 12, 95);
+    font-size: 55px;
+}
+.camp p{
+    padding: 40px 0 0 0 ;
+    font-size: 20px;
+    color: rgb(233, 227, 227);
+}
+.row .column img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+
+}
+.column{
+    flex: 25%;
+    padding: 25px;
+}
+.column img{
+    margin:25px;
+    box-shadow: 5px 5px 5px 5px; color:rgba(30, 12, 95, 0.76);
+    border-radius: 15px;
+    
+}
+.column img:Hover{
+    color: black;
+    scale: 1.15;
+    transition: 0.6s;
+}
+
+@media (max-width:900px){
+        .column{
+            flex:50%;
+        }
+}
+@media (max-width:768px){
+    .column{
+        flex-wrap: wrap;
+        flex: 100%;
+
+    }    
+}
+/*----------------MAPAS---------------*/
+.flex-container{
+    display: flex;
+    justify-content: center;
+    margin:50px 50px;
+    padding: 50px 50px;
+    width: 100%;
+    height: 60vh;
+}
+.grieta{
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+    width: 50vh;
+    height: 200px;
+    padding: 15px 50px;
+    margin: 15px 50px;
+    
+}
+.grieta h2{
+    color: #334a97;
+}
+.grietaimg{
+    width: 50vh;
+    height: 50px;
+   margin: 15px;
+}
+.aramimg{
+    width: 50vh;
+    height: 50px;
+    margin: 15px;
+}
+.aramimg img{
+    width: 500px;
+    height: 350px;
+}
+/*---------------- SECTION SKINS---------------*/
+.Skins{
+    display: flex;
+    align-items:center;
+    flex-flow: row wrap;
+    background-image: url(https://whatifgaming.com/wp-content/uploads/2022/05/Dark-Star-scaled.jpg);
+    height: 100%;
+    width: 100%;
+}
+.Skins h2{
+    height: 40vh;
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family:'Oswald', sans-serif;
+    
+}
+.Skins h2 span{
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.producto{
+   width: 18%;
+    position: relative;
+    margin:15px;
+    background-color: rgb(30, 12, 95);
+   border: 2px solid rgb(30, 12, 95);
+   font-family: 'Oswald', sans-serif;
+}
+.producto img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px 5px; color:rgba(30, 12, 95, 0.76);
+    border-radius: 15px;
+}
+.producto img:hover{
+    transition: 0.6s;
+    transform: scale(1.20);
+}
+.producto h3{
+    position: absolute;
+    top: 0;
+    background-color: #331bbd71;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform:capitalize;
+}
+.producto p{
+    position: absolute;
+    bottom: 0;
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+    background-color:  #331bbd71;
+    text-transform: uppercase;
+}
+/*----------------FOOTER---------------*/
+.playstore{
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding: 40px;
+    background-color: rgb(30, 12, 95);
+    width: 100%;
+}
+.playstore a{
+    background-color: #334a97;
+    width: 130px;
+    height: auto;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.playstore a:Hover{
+    scale: 1.15;
+    transition: 0.5s;
+    background-color: #c300ff;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+}
+/*---------------- INICIO GRID GALERIA ---------------*/
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto  ;
+    grid-template-areas: "img1 img1 img3 img3"
+                         "img2 img9 img5 img6"
+                         "img7 img4 img8 img8";
+    width: auto;
+    height: 1100px;
+    gap: 25px 25px;
+    padding: 15px;
+    margin: 15px;
+}
+.grid-container div{
+    border:3px solid rgb(15, 11, 82);
+    box-shadow: 5px 5px 5px 5px; color: rgb(4, 31, 56);
+    margin: 5px;
+    border-radius: 15px;
+   
+}
+.grid-items:hover{
+    transform: scale(1.25);
+    transition: 0.6s;
+}
+ 
+.item1{
+    background-image: url(https://wallpapercave.com/wp/wp10232888.png);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img1;
+}
+.item2{
+    background-image: url(https://coolhdwall.com/storage/202104/arcane-silco-netflix-series-hd-wallpaper-1920x1080.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img3;
+}
+.item3{
+    background-image: url(https://wallpapercave.com/wp/wp10235766.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img8;
+}
+.item4{
+    background-image: url(https://images6.alphacoders.com/118/thumb-1920-1188254.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img5;
+}
+.item5{
+    background-image: url(https://images6.alphacoders.com/119/1193347.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img6;
+}
+.item6{
+    background-image: url(https://www.xtrafondos.com/wallpapers/vi-de-arcane-8958.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img7;
+}
+.item7{
+    background-image: url(https://wallpapercave.com/wp/wp10666586.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img4;
+}
+.item8{
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/442/36/835/league-of-legends-arcane-jinx-league-of-legends-vi-league-of-legends-hd-wallpaper-preview.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img2;
+}
+.item9{
+    background-image: url(https://www.xtrafondos.com/descargar.php?id=9586&resolucion=3840x2159);
+    background-size: 100% 100%;
+    background-position: center;
+    grid-area: img9;
+}
+/*----------------INICIO GUIAS---------------*/
+.divh2{
+    display: flex;
+    flex-direction: row;
+    background-color: #42219c;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: 'Finlandica', sans-serif;
+    
+
+}
+.divh2 h2{
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+}
+.tutoh2{
+    display: flex;
+    margin: 25px 0px 0px 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    
+}
+.tutoh2 h3{
+    font-size: 24px;
+    width: 600px;
+    color: aliceblue;
+    font-family: 'Finlandica', sans-serif;
+    text-transform: uppercase
+   
+}
+.tutos{
+    margin-bottom: 40px;
+}
+
