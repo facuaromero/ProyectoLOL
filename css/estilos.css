@@ -399,85 +399,38 @@ footer{
     font-family: 'Oswald', sans-serif;
 }
 /*---------------- INICIO GRID GALERIA ---------------*/
-.grid-container{
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto auto  ;
-    grid-template-areas: "img1 img1 img3 img3"
-                         "img2 img9 img5 img6"
-                         "img7 img4 img8 img8";
-    width: auto;
-    height: 1100px;
-    gap: 25px 25px;
-    padding: 15px;
-    margin: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 250px;
+    grid-gap: 15px;
 }
-.grid-container div{
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border:3px solid rgb(15, 11, 82);
     box-shadow: 5px 5px 5px 5px; color: rgb(4, 31, 56);
     margin: 5px;
     border-radius: 15px;
-   
 }
-.grid-items:hover{
-    transform: scale(1.25);
-    transition: 0.6s;
+.contaner-img .box-img:nth-child(1){
+    grid-column-start: span 2 ;
 }
- 
-.item1{
-    background-image: url(https://wallpapercave.com/wp/wp10232888.png);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img1;
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
 }
-.item2{
-    background-image: url(https://coolhdwall.com/storage/202104/arcane-silco-netflix-series-hd-wallpaper-1920x1080.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img3;
-}
-.item3{
-    background-image: url(https://wallpapercave.com/wp/wp10235766.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img8;
-}
-.item4{
-    background-image: url(https://images6.alphacoders.com/118/thumb-1920-1188254.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img5;
-}
-.item5{
-    background-image: url(https://images6.alphacoders.com/119/1193347.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img6;
-}
-.item6{
-    background-image: url(https://www.xtrafondos.com/wallpapers/vi-de-arcane-8958.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img7;
-}
-.item7{
-    background-image: url(https://wallpapercave.com/wp/wp10666586.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img4;
-}
-.item8{
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/442/36/835/league-of-legends-arcane-jinx-league-of-legends-vi-league-of-legends-hd-wallpaper-preview.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img2;
-}
-.item9{
-    background-image: url(https://www.xtrafondos.com/descargar.php?id=9586&resolucion=3840x2159);
-    background-size: 100% 100%;
-    background-position: center;
-    grid-area: img9;
-}
+
+
 /*----------------INICIO GUIAS---------------*/
 .divh2{
     display: flex;
@@ -865,7 +818,17 @@ footer{
         
         
     }
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .box-img:nth-child(1){
+        grid-column-start:span 1 ;
+    }
 }
+
 @media (max-width:768px) {
     body{
         padding-top: 70px;
@@ -975,6 +938,13 @@ footer{
 
 
 }
+.container-img{
+    width: 90%;
+    grid-template-columns: repeat(1,1fr);
+}
+.box-img img{
+    height: 200px;
+}
 .showcase{
     width: 100%;
     height: 250px;
@@ -1029,8 +999,7 @@ width: 100%;
 }
 .carousel{
     padding-right: 50px;
-    background-color: rgb(0, 0, 0);
-
+    background-color: rgb(0, 0, 0); 
     
 }
 .carousel-item{
