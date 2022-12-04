@@ -1233,6 +1233,7 @@ width: 100%;
     height: auto;
     margin-left: 40px;
     margin-top: 50px;
+    padding-bottom: 20px;
 
 }
 .regitit1{
@@ -1308,6 +1309,10 @@ width: 100%;
     font-size: 25px;
 
 }
+.perra:hover{
+    transition: 0.5s;
+    color: beige;
+}
 .preg{
     display: flex;
     margin-top: 25px;
@@ -1326,12 +1331,17 @@ width: 100%;
 .preg a{
     padding-left: 10px;
     font-size: 18px;
-    color: beige;
+    color: rgb(182, 172, 172);
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     
 
 
+
+}
+.preg a:hover{
+    color: beige;
+    transition: 0.3s;
 
 }
 .pasos{
@@ -1388,7 +1398,67 @@ width: 100%;
 
 }
 body{
-    background-color: rgb(15, 11, 82);
+    background-color: black;
+}
+@media (max-width:1630px){
+    .pqsi{
+        height: 104%;
+        width: 90%;
+        bottom: 650px;
+        left: 70px;
+    }
+
+}
+@media (max-width:1500px){
+    .pqsi{
+        height: 440px;
+        width: 68%;
+        bottom: 420px;
+        left: 175px;
+    }
+
+}
+@media (max-width:1200px){
+    .pqsi{
+        height: 440px;
+        width: 83%;
+        bottom: 420px;
+        left: 80px;
+    }
+}
+@media (max-width:900px){
+    .pqsi{
+        height: 440px;
+        width: 83%;
+        bottom: 420px;
+        left: 80px;
+        border: none;
+    }
+    .video-container{
+        display: none;
+    }
+    .video2{
+        width: 100vh;
+    }
+    .regi{
+        height: 100vh;
+        width: 100vh;
+    }
+    .regitit1{
+        height: 100vh;
+        width: 100vh;
+    }
+}
+@media (max-width:700px){
+    .regi{
+        height: 100%;
+        width: 100%;
+    }
+    .regitit1{
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 
