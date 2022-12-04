@@ -3,15 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-
-}
 .bodycamp{
     background-image: url(https://images5.alphacoders.com/114/1149571.jpg);
 }
@@ -116,7 +107,7 @@ width: 100%;
     align-items: center;
     justify-content: center;
     background-color: rgb(15, 11, 82);
-    margin: 25px 15px;
+    margin: 25px 0px;
 }
 .redes ul li{
     display: inline-block;
@@ -1230,3 +1221,174 @@ width: 100%;
     background-color: #33c9bc;
     transition: 0.6s;
 }
+.regi{
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/02/lol-03.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.regilog img{
+    width: 150px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+.regitit1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 80%;
+    backdrop-filter: blur(150px);
+    opacity: .8;
+}
+.regitit2{
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-start;
+    align-items: center;
+    width: 800x;
+    height: 500px;
+}
+.regitit2 h1{
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: rgba(240, 248, 255, 0.959);
+    
+
+}
+.regititp{
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: rgba(184, 172, 70, 0.911);
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+
+}
+.regitit2 img{
+    margin-top: 35px;
+}
+.form{
+    margin-top: 50px;
+}
+.form input{
+    font-size: 28px;
+    border: 1px solid rgba(226, 206, 31, 0.397);
+    background-color: #33c9bc00;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px;
+    width: 104%;
+    text-align: center;
+    
+
+}
+
+::placeholder {
+    color: aliceblue;
+}
+.perra{
+    border: 4px solid rgba(226, 206, 31, 0.397);
+    width: 240px;
+    height: 80px;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 60px;
+    color: rgba(226, 206, 31, 0.397);
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(27, 24, 24);
+    font-family: 'Dosis', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+
+}
+.preg{
+    display: flex;
+    margin-top: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+
+}
+.preg p{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+   color: rgb(211, 194, 41);
+   text-transform: uppercase;
+}
+.preg a{
+    padding-left: 10px;
+    font-size: 18px;
+    color: beige;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    
+
+
+
+}
+.pasos{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.paso1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pelotita1{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border:3px solid rgba(163, 150, 32, 0.993);
+    background-color: aliceblue;
+}
+.paso1 p{
+    color: aliceblue;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+.line{
+    margin-top: 6px;
+    height: 0px;
+    width: 80px;
+    border: 1px solid rgb(179, 164, 33);
+}
+.paso2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.paso2 p{
+    color: rgb(187, 175, 175);
+    font-family: 'Dosis', sans-serif;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+.pelotita2{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border:3px solid rgba(163, 150, 32, 0.993);
+    background-color: gray;
+
+}
+body{
+    background-color: rgb(15, 11, 82);
+}
+
+
