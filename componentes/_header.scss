@@ -1,0 +1,36 @@
+header{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    
+    nav{
+        .logo{
+            width: 115px;
+            height: 50px;
+
+        }
+
+        .nav-link{
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+
+        }
+        .nav-link:hover{
+            background-color: rgb(37, 108, 240);
+            transition: 0.5s;
+
+        }
+        .nav-item{
+            padding: 0px 5px;
+
+        }
+    }
+}
+ /*----------INICIO CAMPEONES--------------*/
+.bodycamp{
+    background-image: url(https://images5.alphacoders.com/114/1149571.jpg);
+}
